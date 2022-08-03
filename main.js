@@ -18,7 +18,7 @@
 
 let notes = []
 
-const notes1 = {
+const note1 = {
     id: 1,
     note: "This is note 1",
     author: "Ethan",
@@ -66,10 +66,18 @@ const note6 = {
     topics: ["Stuff", "Things", "More Stuff", "More Things"]
 }
 
-notes.push(notes1, notes2, notes3, note4, note5, note6)
+notes.push(note1, notes2, notes3, note4, note5, note6)
+
+// for (const note of notes) {
+//     for (const topic of note.topics) {
+//         console.log(topic)
+//     }
+// }
+let totalTopics = 0
 
 for (const note of notes) {
-    for (const topic of notes) {
-        console.log(note.note, topic.topics)
+    for (const topic of note.topics) {
+        console.log(topic)
     }
 }
+
